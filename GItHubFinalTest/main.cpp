@@ -1,14 +1,68 @@
-//
-//  main.cpp
-//  GItHubFinalTest
-//
-//  Created by Tomáš Mucha on 18/09/2021.
-//
-
 #include <iostream>
+#include <cmath>
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+using namespace std;
+
+double FunkciaKalkulacka(double cislo1, double cislo2, char op);
+
+int main()
+{
+char rozhodnutie = '+';
+double cislo1,cislo2 = 0.0;
+    
+    cout<<"Zadajte dve hodnoty a operator [ + - * /  Q = Ukoncenie] \n";
+    cout<<"Zadajte prvu hodnotu : \n";
+    cin>>cislo1;
+    cout<<"Zadajte operand [ + - * / ] \n";
+    cin>>rozhodnutie;
+    cout<<"Zadajte druhu hodnotu : \n";
+    cin>>cislo2;
+    
+    while(rozhodnutie != 'Q')
+    {
+        cout<<"Vysledok je : "<<FunkciaKalkulacka(cislo1, cislo2, rozhodnutie);
+        
+        cout<<"\n Zadajte dve hodnoty a operator [ + - * /  Q = Ukoncenie]";
+        cout<<"Zadajte prvu hodnotu : \n";
+        cin>>cislo1;
+        cout<<"Zadajte operand [ + - * / ] \n";
+        cin>>rozhodnutie;
+        cout<<"Zadajte druhu hodnotu. : \n";
+        cin>>cislo2;
+    }
+    system("PAUSE");
+    
     return 0;
+    
+}
+
+double FunkciaKalkulacka(double cislo1, double cislo2, char op)
+{
+    
+    double vysledok = 0.0;
+    
+    if(op == '+')
+{
+    vysledok = cislo1 + cislo2;
+}
+    
+    else if  (op == '-')
+{
+    vysledok = cislo1 - cislo2;
+}
+
+else if (op == '/')
+{
+    vysledok = cislo1 / cislo2;
+}
+else if (op == '*')
+{
+vysledok = cislo1 * cislo2;
+}
+else
+{
+cout<<" ! Zlyhanie, opakujte zadanie operatora ! ";
+}
+return vysledok;
+
 }
