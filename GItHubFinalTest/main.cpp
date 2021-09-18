@@ -22,12 +22,12 @@ double cislo1,cislo2 = 0.0;
     {
         cout<<"Vysledok je : "<<FunkciaKalkulacka(cislo1, cislo2, rozhodnutie);
         
-        cout<<"\n Zadajte dve hodnoty a operator [ + - * /  Q = Ukoncenie]";
-        cout<<"Zadajte prvu hodnotu : \n";
+        cout<<"\n Zadajte dve hodnoty a operator nachadzajuci sa v zatvorke [ + - * /  Q = Ukoncenie]";
+        cout<<"Zadajte prvu hodnotu prosim : \n";
         cin>>cislo1;
-        cout<<"Zadajte operand [ + - * / ] \n";
+        cout<<"Zadajte operand nachadzajuci sa v zatvorke [ + - * / ] \n";
         cin>>rozhodnutie;
-        cout<<"Zadajte druhu hodnotu. : \n";
+        cout<<"Zadajte druhu hodnotu prosim. : \n";
         cin>>cislo2;
     }
     system("PAUSE");
