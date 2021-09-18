@@ -10,7 +10,7 @@ int main()
 char rozhodnutie = '+';
 double cislo1,cislo2 = 0.0;
     
-    cout<<"Zadajte dve hodnoty a operator [ + - * /  Q = Ukoncenie] \n";
+    cout<<"Zadajte dve hodnoty a operator prosim [ + - * /  Q = Ukoncenie] \n";
     cout<<"Zadajte prvu hodnotu : \n";
     cin>>cislo1;
     cout<<"Zadajte operand [ + - * / ] \n";
